@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "eclipse-visuals",
+  "version": "${version}",
+  "name": "Eclipse Visuals",
+  "description": "A feature-rich visual client mod for Minecraft 1.21.4 Fabric.",
+  "authors": ["EclipseVisuals"],
+  "contact": {
+    "homepage": "https://eclipse.visuals"
+  },
+  "license": "MIT",
+  "icon": "assets/eclipse-visuals/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.eclipsevisuals.EclipseVisualsClient"]
+  },
+  "mixins": ["eclipse-visuals.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
